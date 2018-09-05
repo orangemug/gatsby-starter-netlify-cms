@@ -40,7 +40,6 @@ collections:
           - {label: "Prices", name: "prices", widget: "list", fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Price", name: "price", widget: "string"}]}
           - {label: "Disclaimer", name: "disclaimer", widget: "string"}
           - {label: "FAQ header", name: "faq-header", widget: "string"}
-          - {label: "FAQ header", name: "faq-header", widget: "string"}
           - {label: "FAQ explanation", name: "faq-explanation", widget: "string"}
           - {label: "FAQs", name: "faqs", widget: "list", fields: [{label: "Question", name: "question", widget: "string"}, {label: "Answer", name: "answer", widget: "string"}]}
       - file: "src/pages/about/index.md"
