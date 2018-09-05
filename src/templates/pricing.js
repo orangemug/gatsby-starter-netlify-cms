@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 
-export const FooPageTemplate = ({ title, content, contentComponent }) => {
+export const PricingPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -22,28 +22,28 @@ export const FooPageTemplate = ({ title, content, contentComponent }) => {
   )
 }
 
-FooPageTemplate.propTypes = {
+PricingPageTemplate.propTypes = {
   title: PropTypes.string.isRequired
 }
 
-const FooPage = ({ data }) => {
+const PricingPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <FooPageTemplate
+    <PricingPageTemplate
       title={post.frontmatter.title}
     />
   )
 }
 
-FooPage.propTypes = {
+PricingPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default FooPage
+export default PricingPage
 
 export const aboutPageQuery = graphql`
-  query FooPage($id: String!) {
+  query PricingPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
