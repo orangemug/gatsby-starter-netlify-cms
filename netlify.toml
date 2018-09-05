@@ -1,5 +1,6 @@
 [build]
   publish = "public"
+  publish_mode = "editorial_workflow"
   command = "npm run build"
 [build.environment]
   YARN_VERSION = "1.3.2"
