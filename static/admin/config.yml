@@ -29,6 +29,20 @@ collections:
         fields:
           - {label: "Foo", name: "templateKey", widget: "hidden", default: "foo"}
           - {label: "Title", name: "title", widget: "string"}
+      - file: "src/pages/pricing/index.md"
+        label: "Pricing"
+        name: "pricing"
+        fields:
+          - {label: "Pricing", name: "templateKey", widget: "hidden", default: "pricing"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Sub title", name: "sub-title", widget: "string"}
+          - {label: "Explanation", name: "explanation", widget: "string"}
+          - {label: "Prices", name: "prices", widget: "list", fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Price", name: "price", widget: "string"}]}
+          - {label: "Disclaimer", name: "disclaimer", widget: "string"}
+          - {label: "FAQ header", name: "faq-header", widget: "string"}
+          - {label: "FAQ header", name: "faq-header", widget: "string"}
+          - {label: "FAQ explanation", name: "faq-explanation", widget: "string"}
+          - {label: "FAQs", name: "faqs", widget: "list", fields: [{label: "Question", name: "question", widget: "string"}, {label: "Answer", name: "answer", widget: "string"}]}
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
